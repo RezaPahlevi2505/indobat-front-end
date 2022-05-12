@@ -1,0 +1,636 @@
+@font-face {
+  font-family: "light-font";
+  src: url(BrownStd-Light.eot) format("embedded-opentype"), url(BrownStd-Light.woff) format("woff"), url(BrownStd-Light.woff2) format("woff2"), url(BrownStd-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "regular-font";
+  src: url(BrownStd-Regular.eot) format("embedded-opentype"), url(BrownStd-Regular.woff) format("woff"), url(BrownStd-Regular.woff2) format("woff2"), url(BrownStd-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "bold-font";
+  src: url(BrownStd-Bold.eot) format("embedded-opentype"), url(BrownStd-Bold.woff) format("woff"), url(BrownStd-Bold.woff2) format("woff2"), url(BrownStd-Bold.ttf) format("truetype");
+}
+
+body {
+  font-family: "light-font", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+/* Selection untuk ngeblok warna sesuai keinginan kita */
+::selection {
+  background-color: #e86f31;
+  color: white;
+}
+
+nav .container {
+  width: 100%;
+}
+
+.mini-icon {
+  width: 85%;
+  margin: -16px 0 0 0;
+}
+
+.navbar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  background: white !important;
+  box-shadow: 0.5px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  margin-left: 386px !important;
+}
+
+.navbar-brand {
+  display: inline-block !important;
+  padding-top: 0.3125rem !important;
+  padding-bottom: 0.3125rem !important;
+  /* margin-right: -12rem !important; */
+  font-size: 3.25rem !important;
+  line-height: inherit !important;
+  white-space: nowrap !important;
+}
+
+.nav-item .nav-link {
+  color: #20403b !important;
+  font-size: 13px !important;
+  margin-right: 1.9rem !important;
+  transition: 0.3s !important;
+  /* margin-left: 0.1rem !important; */
+}
+
+.nav-item:hover .nav-link:hover {
+  color: white !important;
+  background-color: #e86f31;
+  border-radius: 6px;
+  font-size: 13px !important;
+  margin-right: 1.9rem !important;
+  /* margin-left: 0.1rem !important; */
+}
+
+.nav-item .nav-link i {
+  color: #e86f31 !important;
+  font-size: 13px !important;
+}
+
+.nav-item:hover .nav-link:hover i {
+  color: white !important;
+}
+
+/* Hero Section */
+.hero-image {
+  width: 98%;
+  margin: -83px 0 0 14px;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-button {
+  background-color: #e86f31;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 50px 10px 50px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #bf5521;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 50px 10px 50px;
+}
+
+/* Hero Text Section */
+
+.hero-text-section {
+  margin: 125px 0 0 0;
+  z-index: 0;
+  padding: 0 0 110px 0;
+}
+
+.hero-text-section h1 {
+  font-size: 38px;
+  padding: 10px 0 0 0;
+}
+
+.hero-text-section p {
+  font-size: 18px;
+  padding: 10px 0 0 0;
+  line-height: 2;
+}
+
+.hero-text-section span {
+  color: #91c137;
+}
+
+.hero-text {
+  display: block;
+  color: black !important;
+}
+
+/* Information Section */
+.information-section {
+  background-color: #f7f7f7;
+  padding: 100px 0 70px 0;
+  z-index: -1;
+  margin: -10px 0 0 0;
+}
+
+.information-section h1 {
+  text-align: center;
+  color: #e86f31;
+}
+
+.information-section p {
+  text-align: center;
+  margin: 23px 0 80px 0;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.information-title {
+  display: inline !important;
+  color: #91c137;
+}
+
+.information-section span {
+  display: block;
+}
+
+/* Services Section */
+
+.services-text {
+  margin: 0 0 120px 0 !important;
+  text-align: left !important;
+}
+
+.services-icon {
+  display: inline;
+  width: 15%;
+  margin: 0 0 0 22px;
+  transition: 0.3s;
+  box-shadow: 0.5px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.services-icon:hover {
+  display: inline;
+  width: 16%;
+  margin: 0 0 0 22px;
+  box-shadow: 0.5px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.services-button-green {
+  background-color: #91c137;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 45px 8px 45px;
+  float: right;
+  transition: 0.3s;
+}
+
+.services-button-green:hover {
+  background-color: #7ba430;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 45px 8px 45px;
+  float: right;
+}
+
+.services-button-orange {
+  background-color: #e86f31;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 70px 8px 70px;
+  float: left;
+  transition: 0.3s;
+}
+
+.services-button-orange:hover {
+  background-color: #cb612b;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 70px 8px 70px;
+  float: left;
+}
+
+/* Promotion Section */
+.promotion-section {
+  padding: 100px 0 150px 0;
+}
+
+.promotion-section h1 {
+  font-size: 32px;
+  margin: 0 0 18px 0;
+}
+
+.promotional-image {
+  display: inline;
+  width: 31%;
+  margin: 0 20px 0 0;
+}
+
+/* Footer Section */
+
+.footer-section-top {
+  background-color: #e86f31;
+  color: white;
+  padding: 20px 0 0 0;
+}
+
+.footer-image {
+  width: 45%;
+  margin: 20px 0 10px 0;
+}
+
+.footer-text {
+  font-size: 13px;
+  padding: 20px 0 30px 0;
+  line-height: 1.6;
+}
+
+.footer-section-top span {
+  display: block;
+}
+
+.footer-section-top h5 {
+  font-size: 15px;
+  margin: 55px 0 24px 0;
+}
+
+.footer-section-top ul {
+  list-style-type: none;
+  margin: 0 0 0 -30px;
+}
+
+.footer-section-top a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.footer-section-top a:hover {
+  text-decoration: none;
+  color: #cb612b;
+  font-size: 12px;
+}
+
+.footer-section-top p {
+  font-size: 12px;
+}
+
+.footer-section-top i {
+  padding: 0 17px 0 0;
+}
+
+.footer-section-bottom {
+  background-color: #91c137;
+  color: white;
+  padding: 20px 0 5px 0;
+}
+
+.footer-section-bottom p {
+  font-size: 12px;
+}
+
+/* ======== ABOUT PAGES =========== */
+/* Navigation Section */
+.navigation-section {
+  background-color: #f7f7f7;
+  padding: 15px 0 1px 0;
+}
+
+.navigation-section p {
+  font-size: 15px;
+}
+
+.navigation-section a {
+  text-decoration: none;
+  color: #648782;
+}
+
+.navigation-section a:hover {
+  text-decoration: none;
+  color: #20403b;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 0 50px 0;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 0 0 30px 0;
+}
+
+.h1-title {
+  display: inline !important;
+}
+
+.about-section p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.about-section span {
+  display: block;
+  color: black !important;
+}
+
+/* Vision Mission Section */
+.vision-mission-section {
+  text-align: center;
+  /* background-color: #e2682a; */
+  background-color: rgba(232, 111, 49, 0.3);
+  padding: 10px 0 35px 0;
+}
+
+.vision-mission-section h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0 0px 0;
+}
+
+.vision-mission-section p {
+  font-size: 15px;
+  text-align: center;
+  line-height: 2;
+}
+
+.vision-mission-section span {
+  display: block;
+}
+
+.mission-section p {
+  line-height: 0;
+}
+
+.vision-mission-image {
+  display: inline;
+  width: 19%;
+}
+
+.vision-mission-image-alt {
+  width: 100%;
+}
+
+.milestone-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Milestone Section */
+.milestone-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 70px 0 30px 0;
+}
+
+.milestone-section span {
+  display: inline;
+  color: black !important;
+}
+
+/* Team Section */
+.team-section {
+  margin: 0 0 120px 0;
+}
+
+.team-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 100px 0 40px 0;
+}
+
+.team-section span {
+  display: inline;
+  color: black !important;
+}
+
+.team-image {
+  width: 90%;
+  height: auto;
+}
+
+.team-section p {
+  font-size: 13px;
+  padding: 20px 0 0 0;
+}
+
+.position-text {
+  display: block !important;
+  font-size: 12px;
+  margin: 12px 0 0 0;
+}
+
+/* =========== LOCATION PAGES ============= */
+
+/* Location Section */
+.location-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 65px 0 20px 0;
+}
+
+.location-section p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.location-section span {
+  display: block;
+  color: black !important;
+}
+
+.maps-image {
+  width: 100%;
+  height: 700px;
+  border: 1.5px solid #20403b;
+  margin: 0 0 30px 0;
+}
+
+/* Location Detail Section */
+.location-detail-section {
+  padding: 20px 0 200px 0;
+}
+
+.contact-box {
+  width: 550px;
+  height: 125px;
+  background-color: white;
+  border: 2px solid #20403b;
+  border-radius: 15px;
+  color: #20403b;
+  font-size: 15px;
+  padding: 15px 20px 15px 20px;
+  margin: 0 0 20px 0;
+}
+
+.location-detail-section h3 {
+  font-size: 23px;
+  font-family: "regular-font" !important;
+}
+
+.location-detail-section p {
+  font-size: 17px;
+}
+
+.location-detail-section span {
+  display: block;
+  line-height: 1.6;
+}
+
+.location-detail-section i {
+  display: inline;
+  float: right;
+  padding: 0 17px 0 0;
+}
+
+/* BUSINESS OPPORTUNITY PAGES */
+.franchise-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 65px 0 20px 0;
+}
+
+.franchise-section p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.franchise-section span {
+  display: block;
+  color: black !important;
+}
+
+.franchise-button-green {
+  background-color: #91c137;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 45px 8px 45px;
+  float: right;
+  transition: 0.3s;
+}
+
+.franchise-button-green:hover {
+  background-color: #7ba430;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 45px 8px 45px;
+  float: right;
+}
+
+.franchise-button-orange {
+  background-color: #e86f31;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 50px 8px 50px;
+  float: left;
+  transition: 0.3s;
+}
+
+.franchise-button-orange:hover {
+  background-color: #cb612b;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 50px 8px 50px;
+  float: left;
+}
+
+/* Other Opportunity Section */
+.other-opportunity-section {
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 70px 0 0 0;
+  padding: 0 0 50px 0;
+}
+
+.other-opportunity-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #e86f31;
+  padding: 65px 0 20px 0;
+}
+
+.other-opportunity-section h3 {
+  display: inline;
+  font-family: "regular-font" !important;
+  font-size: 40px;
+  color: #e86f31;
+}
+
+.other-opportunity-section p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 30px 0 60px 0;
+  padding: 0 10px 0 10px;
+}
+
+.other-opportunity-section span {
+  display: block;
+  color: black !important;
+}
+
+.franchise-box {
+  width: 550px;
+  height: 470px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  padding: 25px 20px 15px 20px;
+  margin: 0 0 20px 0;
+  box-shadow: 5px 0px 14px #888888;
+}
+
+.franchise-box-image {
+  width: 45%;
+  height: auto;
+  display: inline;
+  align-items: center;
+}
+
+.other-franchise-button {
+  background-color: #e86f31;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 170px 8px 170px;
+  float: center;
+  transition: 0.3s;
+}
+
+.other-franchise-button:hover {
+  background-color: #cb612b;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 170px 8px 170px;
+  float: center;
+}
